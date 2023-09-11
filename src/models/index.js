@@ -1,2 +1,2 @@
-export * from './People'
+export * from './Message'
 export * from './User'

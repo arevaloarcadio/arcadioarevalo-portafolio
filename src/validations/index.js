@@ -1,2 +1,2 @@
-export * from './peoples.schemas'
+export * from './messages.schemas'
 

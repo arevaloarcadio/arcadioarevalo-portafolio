@@ -4,6 +4,7 @@ export const sendMail = async (data, res) => {
     try {
         await EmailTemplate.send(data)
     } catch (err) {
+        console.log("Error en correo")
         console.log(err)
     }
 }

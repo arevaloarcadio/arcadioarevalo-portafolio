@@ -6,7 +6,7 @@ import Email from 'email-templates'
 const MailTransporter = new nodemailer.createTransport({
     host: MAIL.MAIL_HOST,
     port: MAIL.MAIL_PORT,
-    secure: MAIL.IS_SECURE,
+    secure: true,
     auth: {
         user: MAIL.MAIL_USERNAME,
         pass: MAIL.MAIL_PASSWORD

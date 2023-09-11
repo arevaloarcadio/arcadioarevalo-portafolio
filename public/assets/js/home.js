@@ -27,7 +27,7 @@ jQuery('#contactUs-Form').on('submit',function(e){
   jQuery('#submit').html('Please wait');
   jQuery('#submit').attr('disabled',true);
   jQuery.ajax({
-      url:'assets/php/submit.php',
+      url:'/messages',
       type:'post',
       data:jQuery('#contactUs-Form').serialize(),
       success:function(result){

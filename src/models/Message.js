@@ -1,8 +1,8 @@
 import { BaseClass } from '../utils'
 
-export class People extends BaseClass {
+export class Message extends BaseClass {
     static get tableName () {
-        return 'peoples'
+        return 'messages'
     }
 
     /*static relationMappings = () => ({
