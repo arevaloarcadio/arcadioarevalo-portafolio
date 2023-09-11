@@ -3,7 +3,7 @@ import path from 'path';
 
 const knexConfig = {
     development: {
-        client: 'mysql',
+        client: 'pg',
         connection: {
             port: DB.port,
             host: DB.host,
@@ -25,7 +25,7 @@ const knexConfig = {
         ssl: { rejectUnauthorized: false }
     },
     staging: {
-        client: 'mysql',
+        client: 'pg',
         connection: {
             database: DB.name,
             user:     DB.username,
@@ -40,7 +40,7 @@ const knexConfig = {
         }
     },
     production: {
-        client: 'mysql',
+        client: 'pg',
         connection: {
             database: DB.name,
             user:     DB.username,
@@ -52,7 +52,8 @@ const knexConfig = {
         },
         migrations: {
             tableName: 'migrations'
-        }
+        },
+        ssl: { rejectUnauthorized: true }
     }
 };
 
